@@ -48,6 +48,7 @@ jobs:
           path: dist/parkingweb
           if-no-files-found: error
           retention-days: 7
+        run: npm run build -- --configuration production --base-href /parkingweb/
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3

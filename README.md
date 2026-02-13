@@ -50,3 +50,8 @@ This project is configured to publish via workflow.
 3. Re-run the workflow in **Actions → Angular CI/CD**.
 
 After that, Pages will serve the built Angular artifact from this workflow.
+If your repository name is not `parkingweb`, update the build command base href:
+
+```yaml
+npm run build -- --configuration production --base-href /<your-repo-name>/
+```
