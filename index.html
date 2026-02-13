@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parkingweb</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, Segoe UI, Arial, sans-serif;
+        background: radial-gradient(circle at 10% 20%, #13203d 0%, #070b16 45%, #05070f 100%);
+        color: #e8edff;
+      }
+
+      .card {
+        width: min(720px, 92vw);
+        border-radius: 18px;
+        border: 1px solid rgba(128, 156, 255, 0.24);
+        background: rgba(17, 27, 52, 0.86);
+        padding: 1.4rem;
+      }
+
+      h1 {
+        margin: 0 0 0.7rem;
+      }
+
+      p {
+        opacity: 0.88;
+        line-height: 1.5;
+      }
+
+      code {
+        background: rgba(113, 146, 255, 0.18);
+        padding: 0.1rem 0.35rem;
+        border-radius: 6px;
+      }
+
+      a {
+        color: #84cbff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Parkingweb Angular App</h1>
+      <p>
+        This repository is an Angular project. If GitHub Pages is currently showing repository content
+        (like README) instead of the app, set Pages source to <strong>GitHub Actions</strong>.
+      </p>
+      <p>
+        Local run: <code>npm install</code> then <code>npm start</code>.
+      </p>
+      <p>
+        Workflow deploy file: <a href="./.github/workflows/ci-cd.yml">.github/workflows/ci-cd.yml</a>
+      </p>
+    </main>
+  </body>
+</html>
