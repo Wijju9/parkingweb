@@ -5,6 +5,19 @@
     <title>Parkingweb</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // Recover SPA route after GitHub Pages 404 redirect.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get('p');
+        if (!p) return;
+
+        var base = window.location.pathname.replace(/[^/]*$/, '');
+        var decoded = decodeURIComponent(p);
+        var clean = window.location.origin + base + decoded;
+        window.history.replaceState(null, '', clean);
+      })();
+    </script>
   </head>
   <body>
     <app-root></app-root>
