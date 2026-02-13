@@ -1,0 +1,21 @@
+<div class="shell">
+  <aside class="sidebar card">
+    <h2>ValetIQ</h2>
+    <p>Parking Management</p>
+
+    <nav>
+      <a routerLink="/app/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/app/operations" routerLinkActive="active">Operations</a>
+      <a routerLink="/app/analytics" routerLinkActive="active">Analytics</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h1>{{ pageTitle }}</h1>
+      <p>{{ pageSubtitle }}</p>
+    </header>
+
+    <ng-content></ng-content>
+  </main>
+</div>
