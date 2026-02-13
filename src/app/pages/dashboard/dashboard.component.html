@@ -1,0 +1,19 @@
+<app-management-shell pageTitle="Command Dashboard" pageSubtitle="Live overview of valet parking operations">
+  <section class="stats">
+    <article class="card metric" *ngFor="let metric of metrics">
+      <p>{{ metric.label }}</p>
+      <h2>{{ metric.value }}</h2>
+      <span>{{ metric.trend }}</span>
+    </article>
+  </section>
+
+  <section class="card table-wrap">
+    <h3>Recent Vehicle Activity</h3>
+    <table>
+      <tr><th>Vehicle</th><th>Zone</th><th>ETA</th><th>Status</th></tr>
+      <tr><td>BMW X5</td><td>B2-21</td><td>2 min</td><td>Ready</td></tr>
+      <tr><td>Tesla Model Y</td><td>A1-08</td><td>7 min</td><td>Assigned</td></tr>
+      <tr><td>Audi Q7</td><td>C4-14</td><td>11 min</td><td>In Transit</td></tr>
+    </table>
+  </section>
+</app-management-shell>
